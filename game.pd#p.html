@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        button:hover{background-color: brown;}
+    </style>
+</head>
+<body style="text-align: center; background-color: rgb(221, 59, 59);">
+
+<h1 style="background-color: white; margin-left: 1cm; margin-right: 1cm;">INI GAME PD*P</h1>
+<h2 id="ubah">sangat mudah memainkanya, anda yang tentukan nasib matador tersebut lewat tombol dibawah</h2>
+
+<script>
+function a(sw){
+    var pic
+    if(sw==0){
+        pic = "mau seruduk.jpeg"
+        document.getElementById("ubah").innerHTML="BANTENG MASIH BERSIAPP"
+    } else if(sw==1){
+        pic= "menghindar.jpeg"
+        document.getElementById("ubah").innerHTML="BANTENG MENYERUDUKK! MATADOR MENGHINDARR!"
+    } else{
+        pic= "keseruduk.jpeg"
+        document.getElementById("ubah").innerHTML="BANTENG MENYERUDUKK! TIDAKKK! MATADORR PANTATNYA DOBOLLLL!!"
+    }
+    document.getElementById('mks').src=pic
+}
+
+
+</script>
+
+<img id="mks" src="mau seruduk.jpeg" width="350px" height="350px">
+<p>
+    <h3>apa yang terjadi pada matador?</h3>
+    <button type="button" onclick="a(0)"><b>banteng diam</b></button>
+    <button type="button" onclick="a(1)"><b>menghindar</b></button>
+    <button type="button" onclick="a(2)"><b>keseruduk</b></button>
+</p>
+
+
+
+</body>
+</html>
